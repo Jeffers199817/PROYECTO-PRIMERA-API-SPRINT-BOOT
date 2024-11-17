@@ -29,4 +29,9 @@ public class SaludoController {
     public String holMundoNombre(@PathVariable String nombre, @PathVariable int edad, @PathVariable String direccion){
         return " Hola mundo!" + nombre + " Tu edad es: " + edad + "Dirección: " + direccion;
     }
+    
+     @GetMapping("/holanombre/{nombre}/{edad}/{direccion}")
+    public String holMundoN(@PathVariable String nombre, @PathVariable int edad, @PathVariable String direccion){
+        return " Hola mundo!" + nombre + " Tu edad es: " + edad + "Dirección: " + direccion;
+    }
 }
